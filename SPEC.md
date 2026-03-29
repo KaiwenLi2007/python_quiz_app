@@ -1,14 +1,13 @@
-SPEC.md: Python CLI Quiz App
-
-How it works (User Flow)
-Here is exactly what should happen when someone plays the game:
+Python CLI Quiz App
 
 Startup: User runs python main.py.
 
-Login/Signup: The app asks: "Wanna (1) Log in or (2) Register?".
+Login: The app asks: "Wanna (1) Log in or (2) Register?".
 
-Register: User makes a username/password. Save it securely.
+(2)
+Register: User makes a username and a password. Save it securely.
 
+(1)
 Log in: User enters info. Check if it matches what's saved.
 
 Main Menu: Once logged in, say hi by name and show:
@@ -16,17 +15,17 @@ Main Menu: Once logged in, say hi by name and show:
 [2] View Stats
 [3] Exit
 
-Quiz Setup: If they want to play, ask how many questions they want.
+Quiz Setup: If they want to play, ask how many questions.
 
-Smart Shuffle: Pick that many questions. Make it smart: if they previously said they liked a question, make it more likely to show up again.
+Smart Shuffle: Pick that many questions. If they previously said they liked a question, make it more likely to show up again.
 
 Playing the Game: For each question:
 
 Show the category, the question, and the type (Multiple Choice, True/False, or Short Answer).
 
-(The Extra Feature): Ask: "Want a hint for 0.5 points? (y/n)". Show the hint if they type 'y'.
+Extra Feature: Ask: "Want a hint for 0.5 points? (y/n)". Show the hint if they type 'y'.
 
-Let them type an answer.
+Ask them for an answer.
 
 Grade it right away. 1 point for correct (0.5 if they used a hint), 0 for wrong. Tell them the right answer if they messed up.
 
@@ -67,7 +66,7 @@ A normal JSON file anyone can read. We added a "hint" field to the base format.
 ]
 }
 
-(Agent: assume there are more questions in the real file, just use this structure!)
+(Assume there are more questions in the real file, just use this structure!)
 
 B. The User Data (users.dat)
 This file should look like gibberish to a human (use pickle). Also, hash the passwords with hashlib (like SHA-256) so they are actually safe. It needs to track:
