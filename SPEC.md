@@ -67,7 +67,6 @@ A normal JSON file anyone can read. We added a "hint" field to the base format.
 }
 
 
-
 (Assume there are more questions in the real file, just use this structure!)
 
 B. The User Data (users.dat)
