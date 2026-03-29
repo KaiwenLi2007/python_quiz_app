@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import sys
 
 import auth
@@ -144,6 +145,12 @@ def main() -> None:
         questions = storage.load_questions()
     except FileNotFoundError:
         print("Oops! Can't find questions.json")
+        sys.exit(1)
+    except json.JSONDecodeError:
+        print("Oops! Can't read questions.json (invalid JSON).")
+        sys.exit(1)
+    except KeyError:
+        print("Oops! questions.json is missing required data (expected a 'questions' list).")
         sys.exit(1)
 
     users = storage.load_users()

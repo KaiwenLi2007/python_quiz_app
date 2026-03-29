@@ -132,7 +132,7 @@ def grade_answer(
             return "ok", (0.5 if used_hint else 1.0), True
         return "ok", 0.0, False
 
-    return "ok", 0.0, False
+    return "invalid", 0.0, False
 
 
 def format_correct_answer(question: dict) -> str:
