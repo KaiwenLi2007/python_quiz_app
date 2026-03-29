@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "question": "What keyword is used to define a function in Python?",
+      "type": "multiple_choice",
+      "options": ["func", "define", "def", "function"],
+      "answer": "def",
+      "category": "Python Basics",
+      "hint": "It is a three-letter abbreviation of the word 'define'."
+    },
+    {
+      "question": "A list in Python is immutable.",
+      "type": "true_false",
+      "answer": "false",
+      "category": "Data Structures",
+      "hint": "Think about whether you can use the .append() method on a list."
+    },
+    {
+      "question": "What built-in function returns the number of items in a list?",
+      "type": "short_answer",
+      "answer": "len",
+      "category": "Python Basics",
+      "hint": "It is short for 'length'."
+    },
+    {
+      "question": "Which method adds an element to the end of a list?",
+      "type": "multiple_choice",
+      "options": ["add()", "push()", "append()", "insert_end()"],
+      "answer": "append()",
+      "category": "Data Structures",
+      "hint": "The name suggests attaching something at the end."
+    },
+    {
+      "question": "Python uses indentation to define blocks of code.",
+      "type": "true_false",
+      "answer": "true",
+      "category": "Python Basics",
+      "hint": "Unlike some languages, curly braces are not required for blocks."
+    },
+    {
+      "question": "What symbol starts a single-line comment in Python?",
+      "type": "short_answer",
+      "answer": "#",
+      "category": "Syntax",
+      "hint": "It is the hash or pound sign on your keyboard."
+    },
+    {
+      "question": "What is the output of type([]) in Python 3?",
+      "type": "multiple_choice",
+      "options": ["tuple", "list", "array", "set"],
+      "answer": "list",
+      "category": "Types",
+      "hint": "Empty square brackets construct this type."
+    },
+    {
+      "question": "A tuple can be modified in place after creation.",
+      "type": "true_false",
+      "answer": "false",
+      "category": "Data Structures",
+      "hint": "Tuples are often described with a word similar to 'unchangeable'."
+    },
+    {
+      "question": "Which keyword creates a small anonymous function?",
+      "type": "short_answer",
+      "answer": "lambda",
+      "category": "Functions",
+      "hint": "It shares a name with a Greek letter used in calculus."
+    },
+    {
+      "question": "What does PEP stand for in PEP 8?",
+      "type": "multiple_choice",
+      "options": [
+        "Python Enhancement Proposal",
+        "Python Extension Package",
+        "Program Entry Point",
+        "Portable Executable Python"
+      ],
+      "answer": "Python Enhancement Proposal",
+      "category": "Ecosystem",
+      "hint": "It is the process used to propose changes to Python itself."
+    },
+    {
+      "question": "The else clause on a for loop runs if the loop completed without break.",
+      "type": "true_false",
+      "answer": "true",
+      "category": "Control Flow",
+      "hint": "Think about what happens when the iterator is exhausted normally."
+    },
+    {
+      "question": "What function opens a file for reading or writing?",
+      "type": "short_answer",
+      "answer": "open",
+      "category": "I/O",
+      "hint": "A simple verb: not close, but the opposite idea of accessing a file."
+    },
+    {
+      "question": "Which is the correct way to import only sqrt from math?",
+      "type": "multiple_choice",
+      "options": [
+        "import sqrt from math",
+        "from math import sqrt",
+        "include math.sqrt",
+        "using math.sqrt"
+      ],
+      "answer": "from math import sqrt",
+      "category": "Modules",
+      "hint": "The keyword 'from' appears before the module name in the standard form."
+    },
+    {
+      "question": "In Python 3, print is a function.",
+      "type": "true_false",
+      "answer": "true",
+      "category": "Python Basics",
+      "hint": "Python 2 had a statement; Python 3 uses parentheses."
+    },
+    {
+      "question": "What exception is raised when a key is missing in a dict and you use []?",
+      "type": "short_answer",
+      "answer": "KeyError",
+      "category": "Exceptions",
+      "hint": "Two words run together: the problem is with the dictionary key."
+    }
+  ]
+}
